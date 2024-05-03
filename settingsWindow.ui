@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Settings</class>
+ <widget class="QDialog" name="Settings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>241</width>
+    <height>152</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/icons/Resources/settings.png</normaloff>:/icons/Resources/settings.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">Background-color: #444446;</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>221</width>
+     <height>129</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLineEdit" name="apiKey">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit 
+{
+border: 1px solid rgb(121, 121, 121);
+color:rgb(255, 255, 255);
+font: 10pt &quot;Courier New&quot;;
+}
+
+QLineEdit:focus
+{
+border: 1px solid rgb(255, 255, 255);
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string>API key</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="apiSecretKey">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit 
+{
+border: 1px solid rgb(121, 121, 121);
+color:rgb(255, 255, 255);
+font: 10pt &quot;Courier New&quot;;
+}
+
+QLineEdit:focus
+{
+border: 1px solid rgb(255, 255, 255);
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string>API secret key</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="passphrase">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit 
+{
+border: 1px solid rgb(121, 121, 121);
+color:rgb(255, 255, 255);
+font: 10pt &quot;Courier New&quot;;
+}
+
+QLineEdit:focus
+{
+border: 1px solid rgb(255, 255, 255);
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string>passphrase</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="progress">
+      <property name="styleSheet">
+       <string notr="true">color:rgb(255, 255, 255);
+font: 10pt &quot;Courier New&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="saveData">
+      <property name="minimumSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+color: rgb(175, 175, 175);
+font: 10pt &quot;Courier New&quot;;
+border: 1px solid rgb(121, 121, 121);
+}
+QPushButton:hover 
+{
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:pressed 
+{
+font: bold 10pt &quot;Courier New&quot;;
+border: 1px solid rgb(0, 255, 0);
+color: rgb(0, 255, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string>SAVE</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

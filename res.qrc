@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>Resources/reload.png</file>
+    <file>Resources/settings.png</file>
+    <file>Resources/logo.png</file>
+  </qresource>
+</RCC>
