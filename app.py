@@ -4,6 +4,7 @@ from PySide6.QtWidgets import QHeaderView
 from PySide6.QtCore import QMargins, QDate
 from mainWindowUI import Ui_MainWindow
 from settingsWindowUI import Ui_Settings
+from profileWindowUI import Ui_Profile
 
 from dataBaseHandler import DataBaseHandler as dbh
 from client import Client
@@ -26,6 +27,7 @@ class App(QMainWindow):
         
         self._ui.refreshButton.clicked.connect(self.__applyFilter)
         self._ui.settingsButton.clicked.connect(self.__openSettinsWindow)
+        self._ui.profileButton.clicked.connect(self.__openProfileWindow)
         self.__updateViews(self._dataBase.getOrders())
         
         self.__startApp()
@@ -202,3 +204,19 @@ class App(QMainWindow):
         else:
             self.ui_settingsWindow.progress.setText('failure')
             self.ui_settingsWindow.progress.setStyleSheet('color:rgb(255, 0, 0); font: 10pt "Courier New";')
+            
+    def __openProfileWindow(self):
+        self.new_window = QDialog()
+        self.ui_profileWindow = Ui_Profile()
+        self.ui_profileWindow.setupUi(self.new_window)
+        self.new_window.show()
+        
+        params = self._client.getParams(productType=USDT_FUTURES)
+        data = self._client.request(GET, ACCOUNT_LIST, params)
+        data =  data.json()['data'][0]
+        print(data)
+        
+        prefix = ' USDT'
+        self.ui_profileWindow.accountEquity.setText(str(round(float(data['accountEquity']), 3)) + prefix)
+        self.ui_profileWindow.available.setText(str(round(float(data['available']), 3)) + prefix)
+        self.ui_profileWindow.locked.setText(str(round(float(data['locked']), 3)) + prefix)

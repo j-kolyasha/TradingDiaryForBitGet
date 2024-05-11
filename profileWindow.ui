@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Profile</class>
+ <widget class="QDialog" name="Profile">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>145</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>550</width>
+    <height>145</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>550</width>
+    <height>145</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Profile</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/icons/Resources/profile.png</normaloff>:/icons/Resources/profile.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #444446;
+color:rgb(255, 255, 255);
+</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>511</width>
+     <height>104</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="minimumSize">
+       <size>
+        <width>102</width>
+        <height>102</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>102</width>
+        <height>102</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid rgb(121, 121, 121);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="res.qrc">:/icons/Resources/profile100x100.png</pixmap>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_1">
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid rgb(121, 121, 121);
+color: rgb(175, 175, 175);
+font: 10pt &quot;Courier New&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Account Equity</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid rgb(121, 121, 121);
+color: rgb(175, 175, 175);
+font: 10pt &quot;Courier New&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Available</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid rgb(121, 121, 121);
+color: rgb(175, 175, 175);
+font: 10pt &quot;Courier New&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Locked</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="accountEquity">
+          <property name="minimumSize">
+           <size>
+            <width>128</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>128</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Courier New</family>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid rgb(121, 121, 121);</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="available">
+          <property name="minimumSize">
+           <size>
+            <width>128</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>128</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Courier New</family>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid rgb(121, 121, 121);</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="locked">
+          <property name="minimumSize">
+           <size>
+            <width>128</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>128</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Courier New</family>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid rgb(121, 121, 121);</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

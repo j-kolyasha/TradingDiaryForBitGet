@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="icons">
+    <file>Resources/profile100x100.png</file>
+    <file>Resources/profile.png</file>
     <file>Resources/reload.png</file>
     <file>Resources/settings.png</file>
     <file>Resources/logo.png</file>

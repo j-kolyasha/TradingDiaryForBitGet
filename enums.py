@@ -23,8 +23,7 @@ USDT_FUTURES = 'USDT-FUTURES'
 
 #requests path
 HISTORYCAL_POSITION = '/api/v2/mix/position/history-position'
-HISTORY_ORDER = '/api/v2/mix/order/orders-history'
-ALL_POSITION = '/api/v2/mix/position/all-position'
+ACCOUNT_LIST = '/api/v2/mix/account/accounts'
 
 #requests type
 GET = 'GET'

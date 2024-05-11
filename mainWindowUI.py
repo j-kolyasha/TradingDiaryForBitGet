@@ -62,6 +62,35 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_12.addWidget(self.label_46)
 
+        self.profileButton = QPushButton(self.layoutWidget)
+        self.profileButton.setObjectName(u"profileButton")
+        self.profileButton.setMinimumSize(QSize(0, 0))
+        self.profileButton.setMaximumSize(QSize(30, 30))
+        self.profileButton.setStyleSheet(u"QPushButton\n"
+"{\n"
+"color: rgb(175, 175, 175);\n"
+"font: 10pt \"Courier New\";\n"
+"border: 1px solid rgb(121, 121, 121);\n"
+"}\n"
+"QPushButton:hover \n"
+"{\n"
+"color: rgb(255, 255, 255);\n"
+"border: 1px solid rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed \n"
+"{\n"
+"font: bold 10pt \"Courier New\";\n"
+"border: 1px solid rgb(0, 255, 0);\n"
+"color: rgb(0, 255, 0);\n"
+"}")
+        icon1 = QIcon()
+        icon1.addFile(u":/icons/Resources/profile.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.profileButton.setIcon(icon1)
+        self.profileButton.setIconSize(QSize(24, 24))
+        self.profileButton.setAutoDefault(False)
+
+        self.horizontalLayout_12.addWidget(self.profileButton)
+
         self.settingsButton = QPushButton(self.layoutWidget)
         self.settingsButton.setObjectName(u"settingsButton")
         self.settingsButton.setMinimumSize(QSize(0, 0))
@@ -83,9 +112,9 @@ class Ui_MainWindow(object):
 "border: 1px solid rgb(0, 255, 0);\n"
 "color: rgb(0, 255, 0);\n"
 "}")
-        icon1 = QIcon()
-        icon1.addFile(u":/icons/Resources/settings.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.settingsButton.setIcon(icon1)
+        icon2 = QIcon()
+        icon2.addFile(u":/icons/Resources/settings.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.settingsButton.setIcon(icon2)
         self.settingsButton.setIconSize(QSize(24, 24))
         self.settingsButton.setAutoDefault(False)
 
@@ -268,9 +297,9 @@ class Ui_MainWindow(object):
 "border: 1px solid rgb(0, 255, 0);\n"
 "color: rgb(0, 255, 0);\n"
 "}")
-        icon2 = QIcon()
-        icon2.addFile(u":/icons/Resources/reload.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.refreshButton.setIcon(icon2)
+        icon3 = QIcon()
+        icon3.addFile(u":/icons/Resources/reload.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.refreshButton.setIcon(icon3)
         self.refreshButton.setIconSize(QSize(32, 32))
 
         self.horizontalLayout_11.addWidget(self.refreshButton)
@@ -699,6 +728,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
+        self.profileButton.setDefault(False)
         self.settingsButton.setDefault(False)
 
 
@@ -708,6 +738,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"TradingDiary", None))
         self.label_46.setText(QCoreApplication.translate("MainWindow", u"Pnl:", None))
+        self.profileButton.setText("")
         self.settingsButton.setText("")
         self.label_45.setText(QCoreApplication.translate("MainWindow", u"Tiker:", None))
         self.tickerEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"BTCUSDT", None))
