@@ -217,6 +217,9 @@ class App(QMainWindow):
         print(data)
         
         prefix = ' USDT'
-        self.ui_profileWindow.accountEquity.setText(str(round(float(data['accountEquity']), 3)) + prefix)
-        self.ui_profileWindow.available.setText(str(round(float(data['available']), 3)) + prefix)
-        self.ui_profileWindow.locked.setText(str(round(float(data['locked']), 3)) + prefix)
+        available = float(data['available'])
+        crossedMaxAvailable = float(data['crossedMaxAvailable'])
+        locked = available - crossedMaxAvailable
+        self.ui_profileWindow.accountEquity.setText(str(round(available, 3)) + prefix)
+        self.ui_profileWindow.available.setText(str(round(crossedMaxAvailable, 3)) + prefix)
+        self.ui_profileWindow.locked.setText(str(round(locked, 3)) + prefix)
