@@ -214,9 +214,17 @@ border: none</string>
              <item>
               <widget class="QLineEdit" name="tickerEdit">
                <property name="styleSheet">
-                <string notr="true">color:rgb(255, 255, 255);
+                <string notr="true">QLineEdit
+{
+color:rgb(255, 255, 255);
 font: 10pt &quot;Courier New&quot;;
-border: 1px solid rgb(121, 121, 121);</string>
+border: 1px solid rgb(121, 121, 121);
+}
+
+QLineEdit:focus
+{
+border: 1px solid rgb(255, 255, 255);
+}</string>
                </property>
                <property name="placeholderText">
                 <string>BTCUSDT</string>
@@ -260,9 +268,17 @@ border: none;</string>
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">color:rgb(255, 255, 255);
+                <string notr="true">QDateEdit
+{
+color:rgb(255, 255, 255);
 font: 10pt &quot;Courier New&quot;;
-border: 1px solid rgb(121, 121, 121);</string>
+border: 1px solid rgb(121, 121, 121);
+}
+
+QDateEdit:focus
+{
+border: 1px solid rgb(255, 255, 255);
+}</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -318,9 +334,17 @@ border: none;</string>
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">color:rgb(255, 255, 255);
+                <string notr="true">QDateEdit
+{
+color:rgb(255, 255, 255);
 font: 10pt &quot;Courier New&quot;;
-border: 1px solid rgb(121, 121, 121);</string>
+border: 1px solid rgb(121, 121, 121);
+}
+
+QDateEdit:focus
+{
+border: 1px solid rgb(255, 255, 255);
+}</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignmentFlag::AlignCenter</set>

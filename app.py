@@ -214,12 +214,12 @@ class App(QMainWindow):
         params = self._client.getParams(productType=USDT_FUTURES)
         data = self._client.request(GET, ACCOUNT_LIST, params)
         data =  data.json()['data'][0]
-        print(data)
         
         prefix = ' USDT'
+        accountEquity = float(data['accountEquity'])
         available = float(data['available'])
         crossedMaxAvailable = float(data['crossedMaxAvailable'])
         locked = available - crossedMaxAvailable
-        self.ui_profileWindow.accountEquity.setText(str(round(available, 3)) + prefix)
+        self.ui_profileWindow.accountEquity.setText(str(round(accountEquity, 3)) + prefix)
         self.ui_profileWindow.available.setText(str(round(crossedMaxAvailable, 3)) + prefix)
         self.ui_profileWindow.locked.setText(str(round(locked, 3)) + prefix)

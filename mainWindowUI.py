@@ -147,9 +147,17 @@ class Ui_MainWindow(object):
 
         self.tickerEdit = QLineEdit(self.layoutWidget)
         self.tickerEdit.setObjectName(u"tickerEdit")
-        self.tickerEdit.setStyleSheet(u"color:rgb(255, 255, 255);\n"
+        self.tickerEdit.setStyleSheet(u"QLineEdit\n"
+"{\n"
+"color:rgb(255, 255, 255);\n"
 "font: 10pt \"Courier New\";\n"
-"border: 1px solid rgb(121, 121, 121);")
+"border: 1px solid rgb(121, 121, 121);\n"
+"}\n"
+"\n"
+"QLineEdit:focus\n"
+"{\n"
+"border: 1px solid rgb(255, 255, 255);\n"
+"}")
 
         self.verticalLayout_6.addWidget(self.tickerEdit)
 
@@ -172,9 +180,17 @@ class Ui_MainWindow(object):
         self.startDateEdit = QDateEdit(self.layoutWidget)
         self.startDateEdit.setObjectName(u"startDateEdit")
         self.startDateEdit.setMinimumSize(QSize(120, 0))
-        self.startDateEdit.setStyleSheet(u"color:rgb(255, 255, 255);\n"
+        self.startDateEdit.setStyleSheet(u"QDateEdit\n"
+"{\n"
+"color:rgb(255, 255, 255);\n"
 "font: 10pt \"Courier New\";\n"
-"border: 1px solid rgb(121, 121, 121);")
+"border: 1px solid rgb(121, 121, 121);\n"
+"}\n"
+"\n"
+"QDateEdit:focus\n"
+"{\n"
+"border: 1px solid rgb(255, 255, 255);\n"
+"}")
         self.startDateEdit.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.startDateEdit.setButtonSymbols(QAbstractSpinBox.ButtonSymbols.NoButtons)
         self.startDateEdit.setKeyboardTracking(True)
@@ -202,9 +218,17 @@ class Ui_MainWindow(object):
         self.finalDateEdit = QDateEdit(self.layoutWidget)
         self.finalDateEdit.setObjectName(u"finalDateEdit")
         self.finalDateEdit.setMinimumSize(QSize(120, 0))
-        self.finalDateEdit.setStyleSheet(u"color:rgb(255, 255, 255);\n"
+        self.finalDateEdit.setStyleSheet(u"QDateEdit\n"
+"{\n"
+"color:rgb(255, 255, 255);\n"
 "font: 10pt \"Courier New\";\n"
-"border: 1px solid rgb(121, 121, 121);")
+"border: 1px solid rgb(121, 121, 121);\n"
+"}\n"
+"\n"
+"QDateEdit:focus\n"
+"{\n"
+"border: 1px solid rgb(255, 255, 255);\n"
+"}")
         self.finalDateEdit.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.finalDateEdit.setButtonSymbols(QAbstractSpinBox.ButtonSymbols.NoButtons)
         self.finalDateEdit.setKeyboardTracking(True)
